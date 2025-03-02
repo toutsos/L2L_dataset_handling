@@ -3,6 +3,13 @@ import os
 import unicodedata
 import re
 
+"""
+This scripts takes as input a json file with the Valid sentences after using the Weirdness Detector
+and the Json file will all the input/output pairs.
+
+It returns a JSON file with only the VALID sentences with the corresponding output.
+"""
+
 # Define file paths
 filtered_json_file = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/new_dataset/combined_valid_sentences_only.json"
 json_file = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/new_dataset/combined.json"

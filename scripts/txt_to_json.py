@@ -3,6 +3,13 @@ import json
 import time
 from pathlib import Path
 
+"""
+Input: .txt file with Input sentences
+       .txt file with Logic sentences
+
+Output: Json file with Input/Label objects.
+"""
+
 def convert_to_json(english_file, logic_file):
     try:
         with open(english_file, 'r', encoding='utf-8') as eng_f, open(logic_file, 'r', encoding='utf-8') as log_f:

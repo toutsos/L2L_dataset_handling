@@ -4,6 +4,11 @@ import sys
 from pathlib import Path
 import os
 
+"""
+This script find all the SUMO terms that exist in a Json file, that it will be used for training.
+It returns a Json file with all the terms and the number of encounter in all the sentences.
+"""
+
 def convert_to_json(logic_file):
 
     # Load JSON file

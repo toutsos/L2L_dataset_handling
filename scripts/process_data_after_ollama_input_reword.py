@@ -2,6 +2,14 @@ import json
 import re
 import os
 
+"""
+Input: JSON training data
+Output: JSON training data.
+
+After the Ollama re-word, some sentences must be processed again, and remove the \" that added
+from Ollama. Also delete sentences that Ollama cannot handle.
+"""
+
 file_name = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/20k_shuffled_from_each_complexity/merged_01_Mar_var_replaced_ollama_reword.json"
 
 output_file = output_file = os.path.splitext(file_name)[0]+"_final.json"

@@ -4,6 +4,11 @@ import sys
 from pathlib import Path
 import os
 
+"""
+Input: JSON training data.
+Output: JSON with the number of sentences that belong to each complexity category.
+"""
+
 def convert_to_json(logic_file):
 
     # Load JSON file

@@ -4,6 +4,13 @@ import time
 import os
 from concurrent.futures import ThreadPoolExecutor
 
+"""
+Input: JSON training data.
+Output: JSON training data.
+
+Reword the input sentences with Ollama.
+"""
+
 # Set up Ollama endpoint
 OLLAMA_API_URL = "http://127.0.0.1:11434/api/generate"  # Adjust based on your setup
 # MODEL_NAME = "custom-model-2-single"  # Replace with your specific model
@@ -11,11 +18,6 @@ OLLAMA_API_URL = "http://127.0.0.1:11434/api/generate"  # Adjust based on your s
 # MODEL_NAME = "llama3.2:latest"  # Replace with your specific model
 MODEL_NAME = "llama3.2:3b-instruct-fp16"  # Replace with your specific model
 # MODEL_NAME = "llama3.3"  # Replace with your specific model
-
-
-
-
-
 
 def evaluate_sentence(json_object):
     time.sleep(0.1)

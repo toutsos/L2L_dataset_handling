@@ -1,5 +1,9 @@
 import re
 
+"""
+This script extracts the SUMO terms that exist in a .kif file!
+"""
+
 # Input and output file names
 input_file = "mega.kif"  # Change to your actual KIF file
 output_file = "sumo_terms.txt"

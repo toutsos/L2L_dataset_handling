@@ -2,6 +2,13 @@ import json
 import random
 import os
 
+"""
+Input: JSON file
+Output: JSON file.
+
+Suffles data and keep a specific number of sentences.
+"""
+
 # File paths
 input_json = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/combined_35_plus_complexity.json"
 

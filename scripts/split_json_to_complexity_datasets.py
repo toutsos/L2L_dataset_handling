@@ -3,6 +3,15 @@ import os
 import unicodedata
 import re
 
+
+"""
+Input: JSON training data
+Output: Multiple JSON files.
+
+Based on the complexity it returns a file for each complexity category, with the related sentences.
+"""
+
+
 json_file = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/new_dataset/combined.json"
 
 # Load sentences from the txt file into an array (stripping whitespace)

@@ -4,6 +4,14 @@ import sys
 from pathlib import Path
 import os
 
+"""
+Input: TXT file with Valid sentences
+Output: JSON file with Valid sentences.
+
+It just replaces the .txt to .json file in-order to remove the various hidden UTF-8 symbols
+from the txt files.
+"""
+
 def convert_to_json(english_file):
     try:
         with open(english_file, 'r', encoding='utf-8') as eng_f:
