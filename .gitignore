@@ -1,0 +1,6 @@
+*.pyc
+*.pyo
+.pixi
+/data/*
+/logs/*
+*.kif
