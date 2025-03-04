@@ -10,9 +10,9 @@ After the Ollama re-word, some sentences must be processed again, and remove the
 from Ollama. Also delete sentences that Ollama cannot handle.
 """
 
-file_name = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/20k_shuffled_from_each_complexity/merged_01_Mar_var_replaced_ollama_reword.json"
+file_name = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/3-stages-training/stage2_var_replaced_ollama_reword_cleaned_from_duplicates.json"
 
-output_file = output_file = os.path.splitext(file_name)[0]+"_final.json"
+output_file = output_file = os.path.splitext(file_name)[0]+"_remove_ollama_cannot_handle.json"
 
 # Load JSON file
 with open(file_name, "r", encoding="utf-8") as f:
@@ -30,8 +30,9 @@ for entry in data:
           "output": entry["output"]
       }
       dataset.append(result)
-
+print(f"Initial Datase length: {len(data)}")
 print(f"Final Dataset length: {len(dataset)}")
+print(f"Removed sentences: {len(data) - len(dataset)}")
 
 # Save the processed JSON
 with open(output_file, "w", encoding="utf-8") as f:

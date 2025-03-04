@@ -12,7 +12,7 @@ Based on the complexity it returns a file for each complexity category, with the
 """
 
 
-json_file = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/new_dataset/combined.json"
+json_file = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/01-3-2025/combined_cleaned_from_duplicates.json"
 
 # Load sentences from the txt file into an array (stripping whitespace)
 with open(json_file, "r", encoding="utf-8") as f:

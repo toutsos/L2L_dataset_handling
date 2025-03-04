@@ -1,10 +1,9 @@
 #!/bin/bash -l
 
-#SBATCH --job-name=txt_to_json_dataset
-#SBATCH --output=/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/logs/txt_to_json_%j.out  # Output log file
-#SBATCH --error=/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/logs/txt_to_json_%j.err   # Error log file
-#SBATCH --time=2:00:00
-#SBATCH --mem=120G
+#SBATCH --job-name=extract_best_sentences
+#SBATCH --output=./out/jobs/best_sentences_%j.out
+#SBATCH --time=40:00:00
+#SBATCH --mem=60G
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
@@ -23,7 +22,5 @@ mkdir -p ${OUTPUT_DIR}
 eval "$(pixi shell-hook -s bash)"
 
 
-srun --time=2:00:00 python scripts/txt_to_json.py \
-"/data/fsg/.sumonlp/sentence_generation/LatestTrainingSet/combined-eng.txt" \
-"/data/fsg/.sumonlp/sentence_generation/LatestTrainingSet/combined-log.txt"
+srun --time=2:00:00 python scripts/extract_the_best_sentences_from_the_file.py
 

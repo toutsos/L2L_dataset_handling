@@ -4,3 +4,6 @@
 /data/*
 /logs/*
 *.kif
+/out/*
+output.txt
+scripts/weird_detection_output.txt

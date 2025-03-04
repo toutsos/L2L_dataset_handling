@@ -7,6 +7,7 @@ Input: JSON file
 Output: JSON file.
 
 Suffles data and keep a specific number of sentences.
+A better approach is the `extract_the_best_sentences_from_the_file.py` which keeps the sentences that offer the most variance!
 """
 
 # File paths

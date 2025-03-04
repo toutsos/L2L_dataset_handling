@@ -103,7 +103,7 @@ def process_sentences(sentences):
 
 start_time = time.time()
 
-file_path = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/20k_shuffled_from_each_complexity/merged_01_Mar_var_replaced.json"
+file_path = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/3-stages-training/stage3_var_replaced.json"
 file_output = os.path.splitext(file_path)[0]+"_ollama_reword.json"
 
 print("-"*50)

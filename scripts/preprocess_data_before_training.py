@@ -11,9 +11,9 @@ Removes spaces between ? and Variable Names. Also replaces the var names with X<
 """
 
 
-file_name = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/20k_shuffled_from_each_complexity/merged_01_Mar.json"
+file_name = "/home/angelos.toutsios.gr/data/Thesis_dev/SUMO-terms/data/LatestDataSet/20-2-2025_generated_dataset/3-stages-training/stage3.json"
 
-output_file = output_file = os.path.splitext(input_json)[0]+"_var_replaced.json"
+output_file = output_file = os.path.splitext(file_name)[0]+"_var_replaced.json"
 
 
 # Load JSON file
